@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100&family=Poppins:wght@200;300;400;500&display=swap');
+@import "core/mixin";
+@import "core/variable";
+@import "core/login";
+@import "core/header";
+@import "core/home";
+@import "core/questionbank";
+@import "core/footer";
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    background-color: $white;
+    color: $black;
+}
+
+
+section.qb_section.create_question_sec{
+ .Create_New_Question_form{
+     .Create_New_Question_field{
+        .form-control:focus {
+            border-color: $activebg;
+            outline: 0;
+            box-shadow: 0 0 0 0rem rgb(13 110 253 / 25%);
+        }
+        .form-select:focus {
+            border-color: $activebg;
+            outline: 0;
+            box-shadow: 0 0 0 0rem rgb(13 110 253 / 25%);
+        }
+         .multi_check_box{
+            input.form-control {
+                border-left: 0px;
+            }
+            .input-group-text {
+                height: 38px;
+                border-radius: 0.25rem 0px 0px 0.25rem;
+                border-right: 0px !important;
+                background-color: $white;
+           
+            }
+         }
+     }
+ }
+}
+
+
+
+
+
+
+
+
+@import "core/responsive";
